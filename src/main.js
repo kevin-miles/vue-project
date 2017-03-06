@@ -6,6 +6,8 @@ import router from './router';
 
 Vue.config.productionTip = false;
 
+router.afterEach((route) => { document.title = route.meta.title; });
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

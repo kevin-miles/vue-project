@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <top-menu></top-menu>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import topMenu from './components/top-menu';
+
 export default {
   name: 'app',
+  components: {
+    topMenu,
+  },
 };
 </script>
 
